@@ -54,6 +54,10 @@ h3 {
 
 header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 img {
@@ -80,6 +84,8 @@ img {
 .portfolio .card {
   width: 360px;
   transition: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .card:hover {
@@ -126,8 +132,10 @@ header .logo {
   padding-top: 188px;
   padding-bottom: 188px;
   background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/hero-img.jpg);
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero-img.jpg);
   background-repeat: no-repeat;
+  max-width: 1440px;
   background-position: center;
   background-size: cover;
 }
@@ -169,7 +177,7 @@ footer .section {
   display: block;
   content: "";
   height: 4px;
-  width: 48px;
+  width: 100%;
   border-radius: 2px;
   background-color: #404bbf;
   bottom: -1px;
@@ -211,6 +219,8 @@ footer .section {
 .nav-link,
 .ad-link {
   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -327,6 +337,11 @@ footer .section {
   fill: #ffffff;
 }
 
+footer .social-icon {
+  height: 24px;
+  width: 24px;
+}
+
 .social-background {
   display: inline-flex;
   align-items: center;
@@ -344,6 +359,11 @@ footer .section {
 .social-background:hover,
 .social-background:focus {
   background-color: #31d0aa;
+}
+
+.team .social-background:hover,
+.team .social-background:focus {
+  background-color: #404bbf;
 }
 
 .portfolio-title {
@@ -431,7 +451,7 @@ footer .logo {
 
 .foot .socials {
   display: flex;
-  column-gap: 24px;
+  column-gap: 16px;
 }
 
 .foot-container {
@@ -439,7 +459,6 @@ footer .logo {
   flex-direction: row;
   column-gap: 120px;
   max-width: 1158px;
-  padding-left: 156px;
 }
 
 .foot .media-p-text {
