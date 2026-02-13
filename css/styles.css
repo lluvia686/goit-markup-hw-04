@@ -321,7 +321,7 @@ footer .section {
 }
 
 .text-team {
-  padding: 32px;
+  padding: 32px 16px;
 }
 
 .team .socials {
@@ -334,7 +334,7 @@ footer .section {
 .social-icon {
   height: 16px;
   width: 16px;
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
 footer .social-icon {
@@ -389,7 +389,6 @@ footer .social-icon {
 
 .overlay {
   padding: 40px 32px 164px 32px;
-  font-family: sans-serif;
   background-color: #4d5ae5;
   color: #f4f4fd;
 
@@ -431,11 +430,11 @@ footer .logo {
 
   display: block;
   padding-top: 0;
-  padding-bottom: 16px;
 }
 
 .foot p {
   max-width: 264px;
+  padding-top: 16px;
 }
 
 .media-p-text {
@@ -443,6 +442,8 @@ footer .logo {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 16px;
+  color: #fff;
 }
 
 .logo-span {
@@ -460,8 +461,4 @@ footer .logo {
   column-gap: 120px;
   max-width: 1158px;
   align-items: baseline;
-}
-
-.foot .media-p-text {
-  padding-bottom: 16px;
 }
